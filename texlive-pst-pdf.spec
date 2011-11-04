@@ -73,6 +73,7 @@ preview package.
 %doc %{_texmfdistdir}/source/latex/pst-pdf/psf-demo.eps
 %doc %{_texmfdistdir}/source/latex/pst-pdf/pst-pdf.dtx
 %doc %{_texmfdistdir}/source/latex/pst-pdf/pst-pdf.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -83,3 +84,5 @@ preview package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

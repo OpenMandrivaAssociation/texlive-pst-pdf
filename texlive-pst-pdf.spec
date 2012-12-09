@@ -73,3 +73,17 @@ preview package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1v-2
++ Revision: 755396
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1v-1
++ Revision: 719378
+- texlive-pst-pdf
+- texlive-pst-pdf
+- texlive-pst-pdf
+- texlive-pst-pdf
+

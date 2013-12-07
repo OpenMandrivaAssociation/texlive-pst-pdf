@@ -6,7 +6,7 @@
 # catalog-version 1.1v
 Name:		texlive-pst-pdf
 Version:	1.1v
-Release:	4
+Release:	5
 Summary:	Make PDF versions of graphics by processing between runs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pst-pdf

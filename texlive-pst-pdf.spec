@@ -1,12 +1,6 @@
-# revision 31660
-# category Package
-# catalog-ctan /macros/latex/contrib/pst-pdf
-# catalog-date 2012-06-18 13:20:48 +0200
-# catalog-license lppl
-# catalog-version 1.1v
 Name:		texlive-pst-pdf
-Version:	1.1v
-Release:	11
+Version:	1.2d
+Release:	1
 Summary:	Make PDF versions of graphics by processing between runs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pst-pdf
@@ -39,29 +33,11 @@ pstricks and requires a recent version of the preview package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/scripts/pst-pdf/ps4pdf
-%{_texmfdistdir}/scripts/pst-pdf/ps4pdf.bat
-%{_texmfdistdir}/scripts/pst-pdf/ps4pdf.bat.noMiKTeX
-%{_texmfdistdir}/scripts/pst-pdf/ps4pdf.bat.w95
-%{_texmfdistdir}/tex/latex/pst-pdf/pst-pdf.sty
-%doc %{_texmfdistdir}/doc/latex/pst-pdf/CHANGES
-%doc %{_texmfdistdir}/doc/latex/pst-pdf/README
-%doc %{_texmfdistdir}/doc/latex/pst-pdf/pst-pdf-DE.pdf
-%doc %{_texmfdistdir}/doc/latex/pst-pdf/pst-pdf-example1.pdf
-%doc %{_texmfdistdir}/doc/latex/pst-pdf/pst-pdf-example1.tex
-%doc %{_texmfdistdir}/doc/latex/pst-pdf/pst-pdf-example2.pdf
-%doc %{_texmfdistdir}/doc/latex/pst-pdf/pst-pdf-example2.tex
-%doc %{_texmfdistdir}/doc/latex/pst-pdf/pst-pdf.pdf
+%{_texmfdistdir}/scripts/pst-pdf
+%{_texmfdistdir}/tex/latex/pst-pdf
+%doc %{_texmfdistdir}/doc/latex/pst-pdf
 #- source
-%doc %{_texmfdistdir}/source/latex/pst-pdf/CHANGES.tex
-%doc %{_texmfdistdir}/source/latex/pst-pdf/elephant.ps
-%doc %{_texmfdistdir}/source/latex/pst-pdf/insect1.eps
-%doc %{_texmfdistdir}/source/latex/pst-pdf/insect15.eps
-%doc %{_texmfdistdir}/source/latex/pst-pdf/knuth.png
-%doc %{_texmfdistdir}/source/latex/pst-pdf/penguin.eps
-%doc %{_texmfdistdir}/source/latex/pst-pdf/psf-demo.eps
-%doc %{_texmfdistdir}/source/latex/pst-pdf/pst-pdf.dtx
-%doc %{_texmfdistdir}/source/latex/pst-pdf/pst-pdf.ins
+%doc %{_texmfdistdir}/source/latex/pst-pdf
 
 #-----------------------------------------------------------------------
 %prep

@@ -1,13 +1,13 @@
 Name:		texlive-pst-pdf
-Version:	1.2d
-Release:	3
+Version:	56622
+Release:	1
 Summary:	Make PDF versions of graphics by processing between runs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pst-pdf
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-pdf.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-pdf.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-pdf.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-pdf.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-pdf.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-pdf.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +24,12 @@ instead of the original PostScript code. The package works with
 pstricks and requires a recent version of the preview package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -41,7 +41,8 @@ pstricks and requires a recent version of the preview package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 

@@ -3,7 +3,7 @@ Version:	56622
 Release:	2
 Summary:	Make PDF versions of graphics by processing between runs
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pst-pdf
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/pst-pdf
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-pdf.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-pdf.doc.r%{version}.tar.xz

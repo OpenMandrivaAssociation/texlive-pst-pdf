@@ -1,5 +1,6 @@
 %global tl_name pst-pdf
 %global tl_revision 77682
+%global tl_bin_links ps4pdf:%{_texmfdistdir}/scripts/pst-pdf/ps4pdf
 
 Name:		texlive-%{tl_name}
 Epoch:		1
@@ -16,6 +17,8 @@ BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(pst-pdf.bin)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}.bin) = %{tl_revision}
+Provides:	texlive-%{tl_name}.bin = %{EVRD}
 
 %description
 The package pst-pdf simplifies the use of graphics from PSTricks and
